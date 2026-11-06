@@ -1,0 +1,260 @@
+{
+ "schema_version": 1,
+ "created": "2026-11-06T16:07:47+08:00",
+ "package_version": "0.1.0",
+ "array": {
+  "key": "a2",
+  "n_mic": 2,
+  "room": [
+   8.0,
+   8.0,
+   3.0
+  ],
+  "aperture_m": 0.2,
+  "min_spacing_m": 0.2,
+  "alias_hz": 857.5,
+  "dists_m": [
+   1.5
+  ],
+  "t60s": [
+   0.0,
+   0.2,
+   0.4,
+   0.6,
+   0.8,
+   1.0
+  ],
+  "tol_deg": 5.0,
+  "search_step_deg": 1.0
+ },
+ "setup": {
+  "spk": "slt",
+  "n_utt": 5,
+  "seed": 7,
+  "snr_db": [
+   -6.0
+  ],
+  "masks": [
+   "irm",
+   "psm"
+  ],
+  "backends": [
+   "gcc_phat",
+   "mgcc",
+   "sr_snr",
+   "sv",
+   "music"
+  ],
+  "rir_order": 60,
+  "rir_cache": {
+   "file": "rirs_a2_o60.npz",
+   "order": 60,
+   "n_rirs": 876,
+   "sha256": "09ed89483168e070e190bdda493b75590a55fdc3616fda447f85a6f03c3dc562"
+  },
+  "babble": {
+   "n_talkers": 37,
+   "mode": "test-grid"
+  }
+ },
+ "conditions": [
+  {
+   "label": "d1.5_t0.20_s-6",
+   "dist_m": 1.5,
+   "t60_s": 0.2,
+   "snr_db": -6.0,
+   "drr_db": 4.01,
+   "n_utt": 5,
+   "metrics": {
+    "none/gcc_phat": {
+     "acc_tol": 0.0,
+     "acc_5": 0.0,
+     "acc_7p5": 20.0,
+     "acc_10": 40.0,
+     "mae_deg": 29.4,
+     "rmse_deg": 47.2,
+     "n": 5
+    },
+    "none/music": {
+     "acc_tol": 40.0,
+     "acc_5": 40.0,
+     "acc_7p5": 60.0,
+     "acc_10": 60.0,
+     "mae_deg": 8.0,
+     "rmse_deg": 10.22,
+     "n": 5
+    },
+    "irm/mgcc": {
+     "acc_tol": 100.0,
+     "acc_5": 100.0,
+     "acc_7p5": 100.0,
+     "acc_10": 100.0,
+     "mae_deg": 0.8,
+     "rmse_deg": 1.41,
+     "n": 5
+    },
+    "irm/sr_snr": {
+     "acc_tol": 100.0,
+     "acc_5": 100.0,
+     "acc_7p5": 100.0,
+     "acc_10": 100.0,
+     "mae_deg": 1.0,
+     "rmse_deg": 2.24,
+     "n": 5
+    },
+    "irm/sv": {
+     "acc_tol": 100.0,
+     "acc_5": 100.0,
+     "acc_7p5": 100.0,
+     "acc_10": 100.0,
+     "mae_deg": 1.2,
+     "rmse_deg": 1.9,
+     "n": 5
+    },
+    "irm/music": {
+     "acc_tol": 40.0,
+     "acc_5": 40.0,
+     "acc_7p5": 60.0,
+     "acc_10": 60.0,
+     "mae_deg": 8.0,
+     "rmse_deg": 10.22,
+     "n": 5
+    },
+    "psm/mgcc": {
+     "acc_tol": 100.0,
+     "acc_5": 100.0,
+     "acc_7p5": 100.0,
+     "acc_10": 100.0,
+     "mae_deg": 0.4,
+     "rmse_deg": 0.89,
+     "n": 5
+    },
+    "psm/sr_snr": {
+     "acc_tol": 100.0,
+     "acc_5": 100.0,
+     "acc_7p5": 100.0,
+     "acc_10": 100.0,
+     "mae_deg": 0.4,
+     "rmse_deg": 0.89,
+     "n": 5
+    },
+    "psm/sv": {
+     "acc_tol": 100.0,
+     "acc_5": 100.0,
+     "acc_7p5": 100.0,
+     "acc_10": 100.0,
+     "mae_deg": 1.2,
+     "rmse_deg": 1.67,
+     "n": 5
+    },
+    "psm/music": {
+     "acc_tol": 40.0,
+     "acc_5": 40.0,
+     "acc_7p5": 60.0,
+     "acc_10": 60.0,
+     "mae_deg": 8.0,
+     "rmse_deg": 10.22,
+     "n": 5
+    }
+   }
+  }
+ ],
+ "summary": {
+  "none/gcc_phat": {
+   "acc_tol": 0.0,
+   "acc_5": 0.0,
+   "acc_7p5": 20.0,
+   "acc_10": 40.0,
+   "mae_deg": 29.4,
+   "rmse_deg": 47.2,
+   "n": 5
+  },
+  "none/music": {
+   "acc_tol": 40.0,
+   "acc_5": 40.0,
+   "acc_7p5": 60.0,
+   "acc_10": 60.0,
+   "mae_deg": 8.0,
+   "rmse_deg": 10.22,
+   "n": 5
+  },
+  "irm/mgcc": {
+   "acc_tol": 100.0,
+   "acc_5": 100.0,
+   "acc_7p5": 100.0,
+   "acc_10": 100.0,
+   "mae_deg": 0.8,
+   "rmse_deg": 1.41,
+   "n": 5
+  },
+  "irm/sr_snr": {
+   "acc_tol": 100.0,
+   "acc_5": 100.0,
+   "acc_7p5": 100.0,
+   "acc_10": 100.0,
+   "mae_deg": 1.0,
+   "rmse_deg": 2.24,
+   "n": 5
+  },
+  "irm/sv": {
+   "acc_tol": 100.0,
+   "acc_5": 100.0,
+   "acc_7p5": 100.0,
+   "acc_10": 100.0,
+   "mae_deg": 1.2,
+   "rmse_deg": 1.9,
+   "n": 5
+  },
+  "irm/music": {
+   "acc_tol": 40.0,
+   "acc_5": 40.0,
+   "acc_7p5": 60.0,
+   "acc_10": 60.0,
+   "mae_deg": 8.0,
+   "rmse_deg": 10.22,
+   "n": 5
+  },
+  "psm/mgcc": {
+   "acc_tol": 100.0,
+   "acc_5": 100.0,
+   "acc_7p5": 100.0,
+   "acc_10": 100.0,
+   "mae_deg": 0.4,
+   "rmse_deg": 0.89,
+   "n": 5
+  },
+  "psm/sr_snr": {
+   "acc_tol": 100.0,
+   "acc_5": 100.0,
+   "acc_7p5": 100.0,
+   "acc_10": 100.0,
+   "mae_deg": 0.4,
+   "rmse_deg": 0.89,
+   "n": 5
+  },
+  "psm/sv": {
+   "acc_tol": 100.0,
+   "acc_5": 100.0,
+   "acc_7p5": 100.0,
+   "acc_10": 100.0,
+   "mae_deg": 1.2,
+   "rmse_deg": 1.67,
+   "n": 5
+  },
+  "psm/music": {
+   "acc_tol": 40.0,
+   "acc_5": 40.0,
+   "acc_7p5": 60.0,
+   "acc_10": 60.0,
+   "mae_deg": 8.0,
+   "rmse_deg": 10.22,
+   "n": 5
+  }
+ },
+ "notes": [
+  "Oracle IRM = |Ydir|^2 / (|Ydir|^2 + |Ymix - Ydir|^2); the denominator contains late reverberation and babble, so it is a direct-path dominance mask rather than a speech-versus-noise mask.",
+  "Oracle masks are built from the simulated direct-path signal and are not available to a real system; the numbers are upper bounds, not achievable accuracy.",
+  "All microphones of the array are used. The DOA search covers the front half-plane [-90, 90] deg with a 1 deg step.",
+  "One RNG drives the whole run (target direction, target offset, babble windows), so results depend on n_utt and on the condition order."
+ ]
+}

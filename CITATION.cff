@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the software entry and the two papers below."
+title: "Oracle-mask DOA upper bounds on five microphone arrays"
+abstract: >-
+  Simulation of diffuse babble in reverberant rooms, oracle time-frequency masks
+  derived from the direct-path signal, and five classical DOA estimators, on five
+  microphone arrays.
+type: software
+authors:
+  - family-names: Lu
+    given-names: Jiaxun
+license: MIT
+keywords:
+  - direction of arrival
+  - time-frequency mask
+  - babble
+  - microphone array
+  - room simulation
+references:
+  - type: article
+    title: "Robust Speaker Localization Guided by Deep Learning-Based Time-Frequency Masking"
+    authors:
+      - family-names: Wang
+        given-names: Zhong-Qiu
+      - family-names: Zhang
+        given-names: Xueliang
+      - family-names: Wang
+        given-names: DeLiang
+    journal: "IEEE/ACM Transactions on Audio, Speech, and Language Processing"
+    volume: 27
+    issue: 1
+    start: 178
+    end: 188
+    year: 2019
+    doi: 10.1109/TASLP.2018.2876169
+  - type: article
+    title: "Divide and Conquer: A Deep CASA Approach to Talker-Independent Monaural Speaker Separation"
+    authors:
+      - family-names: Liu
+        given-names: Yuzhou
+      - family-names: Wang
+        given-names: DeLiang
+    journal: "IEEE/ACM Transactions on Audio, Speech, and Language Processing"
+    volume: 27
+    issue: 12
+    start: 2092
+    end: 2102
+    year: 2019

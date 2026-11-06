@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oracle-doa"
+version = "0.1.0"
+description = "Oracle time-frequency mask upper bounds for classical DOA estimators on five microphone arrays in diffuse babble"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Jiaxun Lu" }]
+keywords = ["direction of arrival", "time-frequency mask", "babble", "microphone array"]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "soundfile>=0.12",
+    "pyroomacoustics>=0.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+oracle-doa = "oracle_doa.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
